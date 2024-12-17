@@ -20,10 +20,5 @@ FROM Article;
 removeAllArticles:
 DELETE FROM Article;
 
-selectAllArticles:
-SELECT Article.*
-FROM Article;
 
-removeAllArticles:
-DELETE FROM Article;
 

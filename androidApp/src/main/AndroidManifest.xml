@@ -1,52 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Permissão para acessar a internet -->
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".DailyPulseApp"
+        android:label="@string/app_name"
         android:allowBackup="false"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!-- Define a activity principal do aplicativo -->
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
 
-            <!-- Intent-filter para identificar que esta é a tela inicial (principal) do app -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-</manifest><!-- Resumo de tudo -->
+</manifest>
 
-    <!-- android:name=".DailyPulseApp" -->
-    <!-- Define a classe onde o aplicativo inicializa componentes globais, como configurações,
-        dependências ou banco de dados. Esta é a primeira classe a ser instanciada no ciclo de vida do app. -->
-
-    <!-- android:allowBackup="false" -->
-    <!-- Impede que o sistema realize backup automático dos dados do aplicativo. -->
-
-    <!-- android:supportsRtl="true" -->
-    <!-- Habilita o suporte a idiomas que são lidos da direita para a esquerda, como árabe ou hebraico. -->
-
-    <!-- android:theme="@style/AppTheme" -->
-    <!-- Define o tema visual do aplicativo (cores, fontes, estilos, etc.). -->
-
-    <!-- android:name=".MainActivity" -->
-    <!-- Define que a MainActivity é a tela principal, a primeira a ser aberta quando o app é iniciado. -->
-
-    <!-- android:exported="true"> -->
-    <!-- indica que uma activity, service, ou receiver pode ser acessado por outros aplicativos no
-    dispositivo Android, além do próprio aplicativo onde está definida. -->
-
-    <!-- <action android:name="android.intent.action.MAIN" /> -->
-    <!-- Esta ação indica que a activity associada (MainActivity) é o ponto de entrada principal do app,
-         ou seja, será aberta ao iniciar o app. -->
-
-    <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-    <!-- Esta categoria marca a activity associada para ser exibida no lançador de aplicativos (ícone do app).
-         Ou seja, é a primeira tela que será mostrada quando o usuário clicar no ícone do app. -->
