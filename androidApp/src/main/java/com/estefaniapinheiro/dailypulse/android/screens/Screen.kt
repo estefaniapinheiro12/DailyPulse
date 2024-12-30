@@ -1,9 +1,6 @@
 package com.estefaniapinheiro.dailypulse.android.screens
 
-// Enum que contém todas as telas
-enum class Screens (val route: String){
-    // tela de artigo
+enum class Screens(val route: String) {
     ARTICLES("reminders"),
-    // Dispositivo
-    ABOUT_DEVICE ("about-device")
+    ABOUT_DEVICE("about-device")
 }

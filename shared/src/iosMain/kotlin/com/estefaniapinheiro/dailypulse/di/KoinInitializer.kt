@@ -6,16 +6,14 @@ import org.koin.core.component.inject
 import org.koin.core.context.startKoin
 
 fun initKoin() {
-    // Gráfico de dependências
     val modules = sharedKoinModules + databaseModule
 
     startKoin {
-        // declaração dos modulos acima
         modules(modules)
     }
 
 }
-// Fica aqui fora para que seja visível para o app IOS
+
 class ArticlesInjector : KoinComponent {
     val articlesViewModel: ArticlesViewModel by inject()
 }

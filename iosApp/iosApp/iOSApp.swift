@@ -5,7 +5,6 @@ import shared
 struct iOSApp: App {
 
     init(){
-    // Chamando o KoinInitializer
         KoinInitializerKt.doInitKoin()
 
     }

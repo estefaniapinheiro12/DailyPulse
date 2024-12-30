@@ -14,12 +14,10 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             MyApplicationTheme {
-                // aqui está apresentando uma saudação
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    //Conexão da tela do artigo,
                     AppScaffold( )
                 }
             }
